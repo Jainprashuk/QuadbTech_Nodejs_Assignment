@@ -18,10 +18,14 @@ These instructions will get you a copy of the project up and running on your loc
    ```bash
    npm start
 
+To Run Backend In local Server
+1. Backend : [localhost:3000/api/dbtickers](localhost:3000/api/dbtickers)
+1. Backend : [localhost:3000/api/dbtickers](localhost:3000/api/top10tickers)
+
 This Instruction are only to run Both frontend and BAckend In Local Server , to Run The Frontend or backend you can also use 
-1. frontend link : [https://quadb-tech-nodejs-assignment-frontend.vercel.app/](https://quadb-tech-nodejs-assignment-frontend.vercel.app/))
-2. backend link : [https://quadb-tech-nodejs-assignment-backend-sigma.vercel.app/api/top10tickers](https://quadb-tech-nodejs-assignment-backend-sigma.vercel.app/api/top10tickers)
-3. Backed Link :[https://quadb-tech-nodejs-assignment-backend-sigma.vercel.app/api/dbtickers](https://quadb-tech-nodejs-assignment-backend-sigma.vercel.app/api/dbtickers)
+1. Frontend link : [https://quadb-tech-nodejs-assignment-frontend.vercel.app/](https://quadb-tech-nodejs-assignment-frontend.vercel.app/))
+2. Backend link : [https://quadb-tech-nodejs-assignment-backend-sigma.vercel.app/api/top10tickers](https://quadb-tech-nodejs-assignment-backend-sigma.vercel.app/api/top10tickers)
+3. Backend Link :[https://quadb-tech-nodejs-assignment-backend-sigma.vercel.app/api/dbtickers](https://quadb-tech-nodejs-assignment-backend-sigma.vercel.app/api/dbtickers)
 
 
 
