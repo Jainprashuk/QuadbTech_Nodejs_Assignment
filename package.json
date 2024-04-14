@@ -1,0 +1,14 @@
+{
+  "name": "nodeproject_quadbtech",
+  "version": "1.0.0",
+  "description": "To create this webpage hodlinfo.com by using HTML and CSS and backend using node js.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm i && concurrently \"npm install --prefix Backend && npm start --prefix Backend\" \"npm install --prefix Frontend && npm run dev --prefix Frontend\""  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
