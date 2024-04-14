@@ -1,6 +1,6 @@
 # Hodlinfo Clone
 
-This project is a clone of hodlinfo.com, built using HTML/CSS for the frontend and Node.js/Express for the backend. The backend fetches data from the WazirX API, stores it in a PostgreSQL database, and serves it to the frontend through an API endpoint.
+This project is a clone of hodlinfo.com, built using HTML/CSS for the frontend and Node.js/Express for the backend. The backend fetches data from the WazirX API, stores it in a MongoDb database, and serves it to the frontend through an API endpoint.
 
 ## Getting Started
 
