@@ -21,3 +21,14 @@ These instructions will get you a copy of the project up and running on your loc
 This Instruction are only to run Both frontend and BAckend In Local Server , to Run The Frontend or backend you can also use 
 1. frontend link : [https://quadb-tech-nodejs-assignment-frontend.vercel.app/](https://quadb-tech-nodejs-assignment-frontend.vercel.app/))
 2. backend link : [https://quadb-tech-nodejs-assignment-backend-sigma.vercel.app/api/top10tickers](https://quadb-tech-nodejs-assignment-backend-sigma.vercel.app/api/top10tickers)
+
+
+
+### Functionality
+1. Automatic Data Refresh:
+The backend automatically fetches fresh data from the WazirX API every 30 seconds.
+Upon each refresh, the top 10 cryptocurrency data (sorted by volume) is saved to the PostgreSQL database.
+Fetching Data on Frontend:
+
+2. The frontend can retrieve cryptocurrency data from the backend API.
+It calculates the difference and savings for each cryptocurrency based on previous data.
