@@ -17,3 +17,7 @@ These instructions will get you a copy of the project up and running on your loc
 3. run
    ```bash
    npm start
+
+This Instruction are only to run Both frontend and BAckend In Local Server , to Run The Frontend or backend you can also use 
+frontend link : [https://quadb-tech-nodejs-assignment-frontend.vercel.app/]([URL](https://quadb-tech-nodejs-assignment-frontend.vercel.app/))
+backend link : [https://quadb-tech-nodejs-assignment-backend-sigma.vercel.app/api/top10tickers](https://quadb-tech-nodejs-assignment-backend-sigma.vercel.app/api/top10tickers)
