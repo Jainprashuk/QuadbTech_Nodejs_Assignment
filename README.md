@@ -21,6 +21,7 @@ These instructions will get you a copy of the project up and running on your loc
 This Instruction are only to run Both frontend and BAckend In Local Server , to Run The Frontend or backend you can also use 
 1. frontend link : [https://quadb-tech-nodejs-assignment-frontend.vercel.app/](https://quadb-tech-nodejs-assignment-frontend.vercel.app/))
 2. backend link : [https://quadb-tech-nodejs-assignment-backend-sigma.vercel.app/api/top10tickers](https://quadb-tech-nodejs-assignment-backend-sigma.vercel.app/api/top10tickers)
+3. Backed Link :[https://quadb-tech-nodejs-assignment-backend-sigma.vercel.app/api/dbtickers](https://quadb-tech-nodejs-assignment-backend-sigma.vercel.app/api/dbtickers)
 
 
 
