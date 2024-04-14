@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "start": "nodemon server.js"
   },
@@ -12,6 +15,7 @@
   "dependencies": {
     "axios": "^1.6.8",
     "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "mongodb": "^6.5.0",
     "nodeproject_quadbtech": "file:.."

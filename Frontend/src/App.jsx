@@ -1,5 +1,6 @@
 import './App.css'
 import Data from './Components/Data'
+import Footer from './Components/Footer'
 import Header from './Components/Header'
 import Stats from './Components/Stats'
 
@@ -14,6 +15,9 @@ function App() {
         <Stats/>
 
         <Data/>
+
+        <Footer/>
+
       </div>
     </>
   )

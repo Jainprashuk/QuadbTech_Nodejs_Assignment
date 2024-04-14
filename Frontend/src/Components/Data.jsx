@@ -50,7 +50,7 @@ function Data() {
       </div>
 
       <ul>
-        {tickers.map((ticker, index) => (
+        {tickers.slice(0,10).map((ticker, index) => (
           <li key={ticker.id}>
             <div className="grid bg-gray-600 p-2 text-gray-100 rounded-md mx-auto grid-cols-1 gap-1 px-6 mt-3 sm:px-0 lg:mt-4 sm:grid-cols-2 lg:grid-cols-6 xl:gap-x-3 xl:mx-12 items-center justify-center">
               <p className="text-center font-bold">{index + 1}</p>
