@@ -7,6 +7,7 @@ require('dotenv').config();
 const app = express();
 app.use(cors());
 
+// Environment variables
 const API_URL = process.env.API_URL;
 const MONGO_URI = process.env.MONGO_URI;
 const DB_NAME = process.env.DB_NAME;
@@ -14,6 +15,7 @@ const COLLECTION_NAME = process.env.COLLECTION_NAME;
 
 let client;
 
+// MongoDB connection setup
 const connectToMongo = async () => {
     if (!client) {
         client = await MongoClient.connect(MONGO_URI);
@@ -21,6 +23,7 @@ const connectToMongo = async () => {
     return client.db(DB_NAME);
 };
 
+// Fetch ticker data from external API
 const fetchTickers = async () => {
     try {
         const response = await axios.get(API_URL);
@@ -31,6 +34,7 @@ const fetchTickers = async () => {
     }
 };
 
+// Save ticker data to MongoDB
 const saveToMongo = async (data) => {
     try {
         const db = await connectToMongo();
@@ -43,6 +47,7 @@ const saveToMongo = async (data) => {
     }
 };
 
+// Retrieve ticker data from MongoDB
 const getFromMongo = async () => {
     try {
         const db = await connectToMongo();
@@ -55,12 +60,14 @@ const getFromMongo = async () => {
     }
 };
 
+// Save top 10 tickers to MongoDB
 const save = async () => {
     try {
         const tickers = await fetchTickers();
         if (!tickers) {
             throw new Error('Data not found');
         }
+        // Process fetched data and select top 10 tickers
         const tickerArray = Object.entries(tickers).map(([symbol, data]) => ({
             name: data.name,
             last: parseFloat(data.last),
@@ -71,6 +78,7 @@ const save = async () => {
         }));
         tickerArray.sort((a, b) => b.last - a.last);
         const top10 = tickerArray.slice(0, 10);
+        // Save top 10 tickers to MongoDB
         await saveToMongo(top10);
         return top10;
     } catch (err) {
@@ -79,6 +87,7 @@ const save = async () => {
     }
 };
 
+// Route to fetch and return top 10 tickers
 app.get('/api/top10tickers', async (req, res) => {
     try {
         const data = await save();
@@ -92,6 +101,7 @@ app.get('/api/top10tickers', async (req, res) => {
     }
 });
 
+// Route to fetch and return all tickers from MongoDB
 app.get('/api/dbtickers', async (req, res) => {
     try {
         const data = await getFromMongo();
@@ -106,6 +116,7 @@ app.get('/api/dbtickers', async (req, res) => {
     }
 });
 
+// Start the server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
