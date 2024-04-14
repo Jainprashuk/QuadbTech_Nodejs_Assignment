@@ -20,7 +20,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 To Run Backend In local Server
 1. Backend : [localhost:3000/api/dbtickers](localhost:3000/api/dbtickers)
-1. Backend : [localhost:3000/api/dbtickers](localhost:3000/api/top10tickers)
+1. Backend : [localhost:3000/api/top10tickers](localhost:3000/api/top10tickers)
 
 This Instruction are only to run Both frontend and BAckend In Local Server , to Run The Frontend or backend you can also use 
 1. Frontend link : [https://quadb-tech-nodejs-assignment-frontend.vercel.app/](https://quadb-tech-nodejs-assignment-frontend.vercel.app/))
@@ -32,7 +32,7 @@ This Instruction are only to run Both frontend and BAckend In Local Server , to 
 ### Functionality
 1. Automatic Data Refresh:
 The backend automatically fetches fresh data from the WazirX API every 30 seconds.
-Upon each refresh, the top 10 cryptocurrency data (sorted by volume) is saved to the PostgreSQL database.
+Upon each refresh, the top 10 cryptocurrency data (sorted by Last Price) is saved to the Mongo database.
 Fetching Data on Frontend:
 
 2. The frontend can retrieve cryptocurrency data from the backend API.
